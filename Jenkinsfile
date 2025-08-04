@@ -11,6 +11,11 @@ pipeline {
      
     stages 
     {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/nehanarke/ProjectForJenkins.git'
+            }
+        }
 
         stage('Build & Test')
          {
