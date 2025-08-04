@@ -24,7 +24,7 @@ pipeline {
         {
             steps 
             {
-                junit '**/test-output/testng-results.xml'
+                junit '**/test-output/testng.xml'
             }
         }
     }
