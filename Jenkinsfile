@@ -7,11 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
-            steps {
-                git url: 'https://github.com/nehanarke/ProjectForJenkins.git'
-            }
-        }
+       
 
         stage('Build & Test') {
             steps {
