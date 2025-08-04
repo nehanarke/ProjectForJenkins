@@ -1,22 +1,29 @@
 pipeline {
     agent any
 
-    tools {
+    tools 
+    {
         maven 'Maven3'
         jdk 'Java 17'
     }
 
-    stages {
-       
 
-        stage('Build & Test') {
-            steps {
+     
+    stages 
+    {
+
+        stage('Build & Test')
+         {
+            steps
+             {
                 bat 'mvn clean test'  // Use 'sh' on Linux/macOS
             }
         }
 
-        stage('Test Report') {
-            steps {
+        stage('Test Report') 
+        {
+            steps 
+            {
                 junit '**/test-output/testng-results.xml'
             }
         }
