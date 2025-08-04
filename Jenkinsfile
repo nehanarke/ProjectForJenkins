@@ -24,7 +24,7 @@ pipeline {
         {
             steps 
             {
-                junit '**/test-output/testng.xml'
+                junit '**/surefire-reports/*.xml'
             }
         }
     }
