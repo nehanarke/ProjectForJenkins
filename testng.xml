@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd">
+
+<suite name="MyTestSuite">
+  <test name="LoginTests">
+    <classes>
+      <class name="Tests.LoginPage"/> <!-- Your package and class name -->
+    </classes>
+  </test>
+</suite>
